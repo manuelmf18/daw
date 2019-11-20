@@ -18,8 +18,8 @@ public class Ejercicio11 {
 		System.out.println("Elige cuadrante a romper :");
 		romper = Entrada.cadena();
 
-		for (int i = 0; i < num; i++) {
-			for (int j = 0; j <num ; j++)
+		for (int i = 0; i < tam; i++) {
+			for (int j = 0; j <tam ; j++) {
 				
 				
 				System.out.print(" *");

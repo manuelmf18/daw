@@ -15,8 +15,7 @@ public class Ejercicio5 {
 		mes = Entrada.entero();
 		
 		
-		
+		//pasar dia y mes a dias y hacer multiplos del 1 al 7 con la equivalencia en dias de la semana
 	}
 
 }
-pasar dia y mes a dias y hacer multiplos del 1 al 7 con la equivalencia en dias de la semana
