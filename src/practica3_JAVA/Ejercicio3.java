@@ -139,11 +139,6 @@ public class Ejercicio3 {
 				diaDif = diaDif - 31;
 			}
 		}
-		if (anyo1 == anyo2 && (mes1 == 1 && mes2 == 12) && (dia1 == 1 && dia2 == 31)) {
-			anyoDif = 1;
-			mesDif = 0;
-			diaDif = 0;
-		}
 		System.out.println("Entre las dos fechas hay: " + anyoDif + " años, " + mesDif + " meses, " + diaDif + " días");
 
 	}

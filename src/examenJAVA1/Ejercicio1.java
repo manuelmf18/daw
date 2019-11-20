@@ -4,32 +4,54 @@ public class Ejercicio1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		int tam = 0;
-		String romper= new String("");
-
-		System.out.println("Introduce el tamaño de tu ventana");
-		tam = Entrada.entero();
-
-		while (tam < 10 || tam % 2 == 0) {
-			System.out.println("Introduce el tamaño de tu ventana");
-			tam = Entrada.entero();
-		}
-		System.out.println("Elige cuadrante a romper :");
-		romper = Entrada.cadena();
-
-		for (int i = 0; i < num; i++) {
-			for (int j = 0; j <num ; j++)
-				
-				
-				System.out.print(" *");
-				i++;
-				if (i == tam) {
-					System.out.print(" ");
-					i = 0;
+		int num=0;
+		
+		String cuadranteRoto=" ";
+		
+		System.out.println("Introduce el tamaño de tu ventana, debe ser un número impar mayor de diez: ");
+		num=Entrada.entero();
+		
+		System.out.println("Elige cuadrante a romper: ");
+		cuadranteRoto=Entrada.cadena().toUpperCase();
+		
+		
+		for(int i=1;i<=num;i++) {
+			for(int j=1;j<=num;j++)
+			{
+				if(i==1 || i==num || j==1 || j==num || i==(num/2+1) || j==(num/2+1))
+					System.out.print("* ");
+				else
+				{	
+					if(cuadranteRoto.equals("ARRIBA IZQUIERDA"))
+						if(i<=(num/2) && j<=(num/2))
+								System.out.print("* ");
+						else
+								System.out.print("  ");
+					else				
+						if(cuadranteRoto.equals("ARRIBA DERECHA"))
+								if(i<=(num/2) && j>(num/2))
+									System.out.print("* ");
+								else
+									System.out.print("  ");
+						else
+								if(cuadranteRoto.equals("ABAJO IZQUIERDA"))
+									if(i>(num/2) && j<=(num/2))
+										System.out.print("* ");
+									else
+										System.out.print("  ");
+								else
+									if(cuadranteRoto.equals("ABAJO DERECHA"))
+										if(i>(num/2) && j>(num/2))
+											System.out.print("* ");
+										else
+											System.out.print("  ");
+									else
+										System.out.print("  ");
 				}
-			}
-			System.out.println("");
+					
+			}		
+			System.out.println();
 		}
 	}
+
 }
