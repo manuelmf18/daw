@@ -9,7 +9,7 @@ public class Ejercicio4Cuadrado {
 		System.out.println("Introduce un numero");
 		num = Entrada.entero();
 
-		//while para formar el cuadrado
+		//while para formar el cuadrado MAL
 		while (i < num) {
 			j = 0;
 			while (j <num) {

@@ -9,7 +9,7 @@ public class Ejercicio3 {
 		int num = 1;
 		int temp = num;
 		int r, sum = 0;
-
+		System.out.println();
 		System.out.println("Introduce un número de 3 cifras");
 		num = Entrada.entero();
 
