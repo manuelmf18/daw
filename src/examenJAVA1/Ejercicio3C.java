@@ -8,11 +8,10 @@ public class Ejercicio3C {
 		char letra=' ',letraEncriptada=' ';
 		boolean esPrimo=false;
 		
-		while(!esPrimo)
-		{
-			primo_secreto=(int)Math.floor(Math.random()*25+1);
+		while(!esPrimo) {
+			primo_secreto=(int)Math.floor(Math.random()*25+1); //numero aleatorio
 			
-			while(i<=(primo_secreto/2+1) && primo_secreto%i!=0)
+			while(i<=(primo_secreto/2+1) && primo_secreto%i!=0) //comprobación primo
 				i++;
 				
 			if(i>(primo_secreto/2+1))
