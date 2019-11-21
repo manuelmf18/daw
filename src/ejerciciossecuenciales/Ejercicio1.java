@@ -5,7 +5,7 @@ public class Ejercicio1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// Multiplica un número por dos y después el resultado por tres1
+		// Multiplica un número por dos y después el resultado por tres.
 		int num = 0, doble = 0, triple = 0;
 
 		System.out.println("Escribe un número entero");
