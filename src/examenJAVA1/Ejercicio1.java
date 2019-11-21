@@ -6,7 +6,7 @@ public class Ejercicio1 {
 		// TODO Auto-generated method stub
 
 		int tam = 0;
-		String romper= new String("");
+		String romper=" ";
 
 		System.out.println("Introduce el tamaño de tu ventana");
 		tam = Entrada.entero();

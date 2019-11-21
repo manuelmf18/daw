@@ -1,11 +1,11 @@
 package ejerciciosJAVAI;
 
-public class PruebaCuadrados2 {
+public class CuadradosDerecha2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int cuadrados = 0, tam = 0, i=0;
+		int cuadrados = 0, tam = 0;
 
 		System.out.println("Escribe un tamaño para el cuadrado");
 		tam = Entrada.entero();
@@ -14,10 +14,9 @@ public class PruebaCuadrados2 {
 		for (int k = 0; k < tam; k++) {
 			for (int j = 0; j < tam*cuadrados ; j++) {
 				System.out.print(" *");
-				i++;
-				if (i==tam) {
+				
+				if ((j+1) %  tam ==0) { //si inicializo a 1 se le suma a lo contrario
 				System.out.print(" ");
-				i=0;
 				}
 			}
 			System.out.println("");
