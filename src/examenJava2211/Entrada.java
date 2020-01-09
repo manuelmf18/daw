@@ -1,4 +1,4 @@
-package ejerciciosFuncionesJAVA;
+package examenJava2211;
 
 import java.io.*;
 

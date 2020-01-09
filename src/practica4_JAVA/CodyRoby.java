@@ -137,7 +137,7 @@ public class CodyRoby {
 		if (robotJuega.equals("Cody")) {
 			coordYCody = coordYCody - 6;
 			if (coordYCody >= 3 && (coordYCody != barrera1Y || coordXCody != barrera1X)
-					&& (coordYCody != barrera2Y || coordXCody != barrera2X) && (coordYCody <= (TAM_TABLERO * 6 - 3))) {
+					&& (coordYCody != barrera2Y || coordXCody != barrera2X)) {
 				esPosible = true;
 			} else {
 				esPosible = false;
@@ -146,7 +146,7 @@ public class CodyRoby {
 		} else {
 			coordYRoby = coordYRoby - 6;
 			if (coordYRoby >= 3 && (coordYRoby != barrera1Y || coordXRoby != barrera1X)
-					&& (coordYRoby != barrera2Y || coordXRoby != barrera2X) && (coordYRoby <= (TAM_TABLERO * 6 - 3))) {
+					&& (coordYRoby != barrera2Y || coordXRoby != barrera2X)) {
 				esPosible = true;
 			} else {
 				esPosible = false;
@@ -162,7 +162,7 @@ public class CodyRoby {
 
 		if (robotJuega.equals("Cody")) {
 			coordYCody = coordYCody + 6;
-			if (coordYCody >= 3 && (coordYCody != barrera1Y || coordXCody != barrera1X)
+			if ((coordYCody != barrera1Y || coordXCody != barrera1X)
 					&& (coordYCody != barrera2Y || coordXCody != barrera2X) && (coordYCody <= (TAM_TABLERO * 6 - 3))) {
 				esPosible = true;
 			} else {
@@ -171,7 +171,7 @@ public class CodyRoby {
 			}
 		} else {
 			coordYRoby = coordYRoby + 6;
-			if (coordYRoby >= 3 && (coordYRoby != barrera1Y || coordXRoby != barrera1X)
+			if ((coordYRoby != barrera1Y || coordXRoby != barrera1X)
 					&& (coordYRoby != barrera2Y || coordXRoby != barrera2X) && (coordYRoby <= (TAM_TABLERO * 6 - 3))) {
 				esPosible = true;
 			} else {
@@ -189,7 +189,7 @@ public class CodyRoby {
 
 		if (robotJuega.equals("Cody")) {
 			coordXCody = coordXCody + 6;
-			if (coordXCody >= 3 && (coordYCody != barrera1Y || coordXCody != barrera1X)
+			if ((coordYCody != barrera1Y || coordXCody != barrera1X)
 					&& (coordYCody != barrera2Y || coordXCody != barrera2X) && coordXCody <= (TAM_TABLERO * 6 - 3)) {
 				esPosible = true;
 			} else {
@@ -198,7 +198,7 @@ public class CodyRoby {
 			}
 		} else {
 			coordXRoby = coordXRoby + 6;
-			if (coordXRoby >= 3 && (coordYRoby != barrera1Y || coordXRoby != barrera1X)
+			if ((coordYRoby != barrera1Y || coordXRoby != barrera1X)
 					&& (coordYRoby != barrera2Y || coordXRoby != barrera2X) && coordXRoby <= (TAM_TABLERO * 6 - 3)) {
 				esPosible = true;
 			} else {
@@ -217,7 +217,7 @@ public class CodyRoby {
 		if (robotJuega.equals("Cody")) {
 			coordXCody = coordXCody - 6;
 			if (coordXCody >= 3 && (coordYCody != barrera1Y || coordXCody != barrera1X)
-					&& (coordYCody != barrera2Y || coordXCody != barrera2X) && coordXCody <= (TAM_TABLERO * 6 - 3)) {
+					&& (coordYCody != barrera2Y || coordXCody != barrera2X)) {
 				esPosible = true;
 			} else {
 				esPosible = false;
@@ -226,7 +226,7 @@ public class CodyRoby {
 		} else {
 			coordXRoby = coordXRoby - 6;
 			if (coordXRoby >= 3 && (coordYRoby != barrera1Y || coordXRoby != barrera1X)
-					&& (coordYRoby != barrera2Y || coordXRoby != barrera2X) && coordXRoby <= (TAM_TABLERO * 6 - 3)) {
+					&& (coordYRoby != barrera2Y || coordXRoby != barrera2X)) {
 				esPosible = true;
 			} else {
 				esPosible = false;
@@ -352,60 +352,60 @@ public class CodyRoby {
 		boolean ejecucionRoby = false;
 		int movimientoAleatorio = 0;
 
-		if (numAleatorio > 0) { //casos base
+		if (numAleatorio == 0) {
+			return true;
+		}
 
-			movimientoAleatorio = (int) Math.floor((Math.random() * 4) + 1);
-			if (movimientoAleatorio == 1) {
-				System.out.println("ar");
-				if (moverArriba(robotJuega)) {
+		movimientoAleatorio = (int) Math.floor((Math.random() * 4) + 1);
+
+		if (movimientoAleatorio == 1) {
+			System.out.println("ar");
+			if (moverArriba(robotJuega)) {
+				ejecucionRoby = true;
+			} else {
+				ejecucionRoby = false;
+			}
+		} else {
+			if (movimientoAleatorio == 2) {
+				System.out.println("ab");
+				if (moverAbajo(robotJuega)) {
 					ejecucionRoby = true;
 				} else {
 					ejecucionRoby = false;
 				}
 			} else {
-				if (movimientoAleatorio == 2) {
-					System.out.println("ab");
-					if (moverAbajo(robotJuega)) {
+				if (movimientoAleatorio == 3) {
+					System.out.println("de");
+					if (moverDerecha(robotJuega)) {
 						ejecucionRoby = true;
 					} else {
 						ejecucionRoby = false;
 					}
 				} else {
-					if (movimientoAleatorio == 3) {
-						System.out.println("de");
-						if (moverDerecha(robotJuega)) {
+					if (movimientoAleatorio == 4) {
+						System.out.println("iz");
+						if (moverIzquierda(robotJuega)) {
 							ejecucionRoby = true;
 						} else {
 							ejecucionRoby = false;
 						}
 					} else {
-						if (movimientoAleatorio == 4) {
-							System.out.println("iz");
-							if (moverIzquierda(robotJuega)) {
-								ejecucionRoby = true;
-							} else {
-								ejecucionRoby = false;
-							}
-						} else {
-							ejecucionRoby = false;
-						}
+						ejecucionRoby = false;
 					}
 				}
 			}
-			// caso base true
-			if (ejecucionRoby) {
-				if (coordYRoby == coordYCody && coordXRoby == coordXCody) {
-					ganador = true;
-					numAleatorio = 0;
-				}
-			} else { // caso base false
-				numAleatorio = 0;
-			}
-
-		} else { // caso recursivo
-			ejecutarJugadaRobyR(numAleatorio);
 		}
-		return ejecucionRoby;
+		// caso base true
+		if (ejecucionRoby) {
+			if (coordYRoby == coordYCody && coordXRoby == coordXCody) {
+				ganador = true;
+				return true;
+			} else { // caso recursivo
+				return ejecutarJugadaRobyR(numAleatorio - 1);
+			}
+		} else { // caso base false
+			return false;
+		}
 	}
 
 	public static boolean ejecutarJugada(int numAleatorio, String robotJuega) {

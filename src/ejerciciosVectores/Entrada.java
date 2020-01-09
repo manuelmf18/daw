@@ -1,4 +1,4 @@
-package ejerciciosFuncionesJAVA;
+package ejerciciosVectores;
 
 import java.io.*;
 

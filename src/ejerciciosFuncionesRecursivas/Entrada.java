@@ -1,4 +1,4 @@
-package ejerciciosFuncionesJAVA;
+package ejerciciosFuncionesRecursivas;
 
 import java.io.*;
 

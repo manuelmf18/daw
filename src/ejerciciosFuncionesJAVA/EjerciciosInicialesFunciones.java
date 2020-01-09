@@ -1,6 +1,6 @@
-package funcionesyprocedimientos;
+package ejerciciosFuncionesJAVA;
 
-public class EjerciciosIniciales1 {
+public class EjerciciosInicialesFunciones {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -45,7 +45,7 @@ public class EjerciciosIniciales1 {
 		 */
 
 		// Prueba Ejercicio 6
-		cilindro();
+		//cilindro();
 		
 		
 		// Prueba Ejercicio 7
@@ -103,13 +103,13 @@ public class EjerciciosIniciales1 {
 		return num1;
 	}
 
-	public static  double cilindro(double radio) {
+	//public static  double cilindro(double radio) {
 		// 2pi*radio*altura a
 		// pi*radio^2*altura v
 		
-		return a;
+		//return a;
 		
-		return v;
+		//return v;
 	}
 
-}
+//}
