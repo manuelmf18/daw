@@ -11,6 +11,7 @@ public class Ejercicio1 {
 		for (int i = 0; i < vectorAleatorio.length; i++) {
 			vectorAleatorio[i] =  (int) Math.round(Math.random()*20);
 		}
+		
 		for (int i = 0; i < vectorAleatorio.length; i++) {
 			if (vectorAleatorio[i] % 2 == 0) {
 				numPares++;

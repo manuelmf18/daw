@@ -21,7 +21,7 @@ public class Ejercicio5 {
 				posicionesImpares=posicionesImpares+numerosPositivos[i];
 			}
 		}
-		System.out.println("La suma de los números pares es " + posicionesPares + " y la de los números impares es " + posicionesImpares);
+		System.out.println("La suma de las posiciones pares es " + posicionesPares + " y la de las posiciones impares es " + posicionesImpares);
 		
 	}
 

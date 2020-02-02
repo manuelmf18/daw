@@ -22,9 +22,9 @@ public class Ejercicio2 {
 		}
 		int[] vectorPares = new int[contPares];
 		int[] vectorImpares = new int[contImpares];
+		int j=0, k=0;
 		
 		for (int i = 0; i < vectorInicial.length; i++) {
-			int j=0, k=0;
 			if (vectorInicial[i] % 2 == 0) {
 				vectorPares[j]=vectorInicial[i];
 				j++;
@@ -35,11 +35,11 @@ public class Ejercicio2 {
 		}
 		
 		for (int i = 0; i < vectorPares.length; i++) {
-			System.out.println("En la posición " + i + " hay " + vectorPares[i]);
+			System.out.println("En la posición " + i + " del vector pares hay " + vectorPares[i]);
 		}
 		
 		for (int i = 0; i < vectorImpares.length; i++) {
-			System.out.println("En la posición " + i + " hay " + vectorImpares[i]);
+			System.out.println("En la posición " + i + " del vector impares hay " + vectorImpares[i]);
 		}
 	}
 
