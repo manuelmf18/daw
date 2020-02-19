@@ -10,7 +10,7 @@ public class Ahorcado {
 		 "niño", "coge", "curvas" },
 		 { "tu", "algodon", "engaña", "a los pajaros" }, { "un", null, "come",
 		 "hierba" },
-		 { "mi", null, null, "aristas" }, { null, null, null, null }, { null, null,
+		 { "mi", null, null, "aristas" }, { "nuestro", null, null, null }, { null, null,
 		 null, null },
 		 { null, null, null, null }, { null, null, null, null }, { null, null, null,
 		 null } };
