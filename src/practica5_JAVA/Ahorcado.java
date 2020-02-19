@@ -6,14 +6,10 @@ public class Ahorcado {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		 String[][] matrizJuego = { { "el", "perro", "tiende", "peras" }, { "su",
-		 "niño", "coge", "curvas" },
-		 { "tu", "algodon", "engaña", "a los pajaros" }, { "un", null, "come",
-		 "hierba" },
-		 { "mi", null, null, "aristas" }, { "nuestro", null, null, null }, { null, null,
-		 null, null },
-		 { null, null, null, null }, { null, null, null, null }, { null, null, null,
-		 null } };
+		String[][] matrizJuego = { { "el", "perro", "tiende", "peras" }, { "su", "niño", "coge", "curvas" },
+				{ "tu", "algodon", "engaña", "a los pajaros" }, { "un", null, "come", "hierba" },
+				{ "mi", null, null, "aristas" }, { "nuestro", null, null, null }, { null, null, null, null },
+				{ null, null, null, null }, { null, null, null, null }, { null, null, null, null } };
 
 //		String[][] matrizJuego = new String[NUM_FILAS][NUM_COL];
 		String[] vectorFraseSecreta = new String[4];
