@@ -1,4 +1,4 @@
-package ejerciciosCadenas;
+package practica5_JAVA;
 
 import java.io.*;
 

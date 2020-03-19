@@ -1,4 +1,4 @@
-package ejerciciosCadenas;
+package ejerciciosOOTres;
 
 import java.io.*;
 

@@ -11,7 +11,7 @@ public class Ahorcado {
 				{ "mi", null, null, "aristas" }, { "nuestro", null, null, null }, { null, null, null, null },
 				{ null, null, null, null }, { null, null, null, null }, { null, null, null, null } };
 
-//		String[][] matrizJuego = new String[NUM_FILAS][NUM_COL];
+		// String[][] matrizJuego = new String[NUM_FILAS][NUM_COL];
 		String[] vectorFraseSecreta = new String[4];
 		char[] vecCarac = new char[5];
 
@@ -110,9 +110,9 @@ public class Ahorcado {
 					System.out.println("Pide letra: ");
 					carac = Entrada.caracter();
 
-					while (!insertaLetraOrdenadaEnVector(vecCarac, carac)) { // para que no inserte una letra repetida
-						System.out.println("Esa letra ya ha sido probada");
-					}
+//					while (!insertaLetraOrdenadaEnVector(vecCarac, carac)) { // para que no inserte una letra repetida
+//						System.out.println("Esa letra ya ha sido probada");
+//					}
 					intentos--;
 
 					for (int i = 0; i < vectorFraseSecreta.length; i++) {

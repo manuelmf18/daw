@@ -1,4 +1,4 @@
-package ejerciciosCadenas;
+package examen2102;
 
 import java.io.*;
 
